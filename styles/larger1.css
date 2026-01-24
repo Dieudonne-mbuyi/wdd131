@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+
+    main {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .data {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        width: 250px;
+    }
+
+    .weather {
+        position: absolute;
+        top: 300px;
+        bottom: 40px;
+        right: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        width: fit-content;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+
+    }
+}
