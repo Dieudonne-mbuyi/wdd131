@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #4b003f;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+form {
+    background: #ddd;
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 6px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+fieldset {
+    border: none;
+    margin-top: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #4b003f;
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.confirmation {
+    text-align: center;
+    margin-top: 3rem;
+}
