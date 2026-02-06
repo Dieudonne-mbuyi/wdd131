@@ -61,4 +61,7 @@ input[type="submit"] {
 .confirmation {
     text-align: center;
     margin-top: 3rem;
+
 }
+@media screen and (width-768px){
+    main{
