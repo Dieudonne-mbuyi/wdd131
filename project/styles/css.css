@@ -1,0 +1,179 @@
+:root {
+    --primary: #1f4fd8;
+    --accent: #f2b705;
+    --light: #f4f4f4;
+    --dark: #222;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    color: var(--primary);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: black;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width:768px) {
+    .logo img {
+        height: 45px;
+    }
+}
+
+/* SECTIONS */
+
+section {
+    padding: 3rem 0;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    border-left: 5px solid var(--accent);
+}
+
+/* CONTACT */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
